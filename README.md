@@ -33,7 +33,7 @@ This backend Node.js service uses **Google Gemini AI** to summarize input text a
 
 ---
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### 1. Clone the Repository
 
@@ -41,4 +41,31 @@ This backend Node.js service uses **Google Gemini AI** to summarize input text a
 git clone 
 cd maheshwari-electrical-agency-backend-task
 
+2. Install Dependencies
+```bash
+npm insatll
+
+3. For Run
+```bash
+node.index.js
+
+
+#API Endpoint
+#POST /ask-ai
+
+#Request Body:
+```bash
+{
+  "text": "Electricity is essential for daily life. It powers homes and industries."
+}
+
+#Response:
+```bash
+{
+  "original": "Electricity is essential for daily life. It powers homes and industries.",
+  "summary": "Electricity is vital for modern life, powering homes and businesses.\n",
+  "translated_summary_hindi": "आधुनिक जीवन के लिए बिजली अत्यंत आवश्यक है, जो घरों और व्यवसायों को शक्ति प्रदान करती है। (Aadhunik jeevan ke liye bijli atyant avashyak hai, jo gharon aur vyavsayon ko shakti pradaan karti hai.)\n",
+  "translated_summary_kannada": "ಆಧುನಿಕ ಜೀವನಕ್ಕೆ ವಿದ್ಯುತ್ ಅತ್ಯಗತ್ಯ, ಮನೆಗಳು ಮತ್ತು ವ್ಯಾಪಾರಗಳಿಗೆ ಶಕ್ತಿ ನೀಡುತ್ತದೆ. (Ādhunika jīvanakke vidyut atyagatya, manegalu mattu vyāpāragalige śakti nīḍuttade.)\n",
+  "translated_summary_gujarati": "આધુનિક જીવન માટે વીજળી અત્યંત જરૂરી છે, જે ઘરો અને ધંધાઓને ચલાવે છે.  (Aadhunik jeevan maate vijali atyant jaruri chhe, je gharo ane dhandhao ne chalaave chhe.)\n"
+}
 
