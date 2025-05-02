@@ -1,66 +1,79 @@
-#  Maheshwari Electrical Agency - Backend Task
+# ⚡ Maheshwari Electrical Agency - Backend Task
 
-This backend Node.js service uses **Google Gemini AI** to summarize input text and translate the summary into **Hindi**, **Gujarati**, and **Kannada**.
-
----
-
-##  Tech Stack
-
-- Node.js
-- Express.js
-- Google Generative AI (Gemini)
-- dotenv
-- body-parser
+This backend Node.js service leverages **Google Gemini AI** to **summarize** input text and **translate** the summary into **Hindi**, **Gujarati**, and **Kannada**.
 
 ---
 
-##  Features
+## 🚀 Tech Stack
 
-- Summarizes the given text
--  Translates the summary into:
+- **Node.js**
+- **Express.js**
+- **Google Generative AI (Gemini)**
+- **dotenv**
+- **body-parser**
+
+---
+
+## ✨ Features
+
+- ✅ Summarizes any given input text  
+- 🌐 Translates the summary into:
   - Hindi 🇮🇳
   - Gujarati 🇬🇺
   - Kannada 🇰🇳
 
 ---
 
-##  Project Structure
-├── aiFunctions.js # Contains summarization and translation logic
-├── index.js # Express server setup
-├── .env # Stores Gemini API Key
-├── package.json # Dependencies and scripts
+## 📁 Project Structure
 
+```
+maheshwari-electrical-agency-backend-task/
+├── aiFunctions.js          # Contains summarization and translation logic
+├── index.js                # Express server setup
+├── .env                    # Stores Gemini API Key
+├── package.json            # Dependencies and scripts
+```
 
 ---
 
-##  Setup Instructions
+## 🛠️ Setup Instructions
 
 ### 1. Clone the Repository
 
 ```bash
-git clone 
+git clone <your-repo-url>
 cd maheshwari-electrical-agency-backend-task
+```
 
-2. Install Dependencies
+### 2. Install Dependencies
+
 ```bash
-npm insatll
+npm install
+```
 
-3. For Run
+### 3. Run the Server
+
 ```bash
-node.index.js
+node index.js
+```
 
+---
 
-#API Endpoint
-#POST /ask-ai
+## 📡 API Endpoint
 
-#Request Body:
-```bash
+### `POST /ask-ai`
+
+**Request Body:**
+
+```json
 {
   "text": "Electricity is essential for daily life. It powers homes and industries."
 }
+```
 
-#Response:
-```bash
+**Response:**
+
+```json
 {
   "original": "Electricity is essential for daily life. It powers homes and industries.",
   "summary": "Electricity is vital for modern life, powering homes and businesses.\n",
@@ -68,4 +81,20 @@ node.index.js
   "translated_summary_kannada": "ಆಧುನಿಕ ಜೀವನಕ್ಕೆ ವಿದ್ಯುತ್ ಅತ್ಯಗತ್ಯ, ಮನೆಗಳು ಮತ್ತು ವ್ಯಾಪಾರಗಳಿಗೆ ಶಕ್ತಿ ನೀಡುತ್ತದೆ. (Ādhunika jīvanakke vidyut atyagatya, manegalu mattu vyāpāragalige śakti nīḍuttade.)\n",
   "translated_summary_gujarati": "આધુનિક જીવન માટે વીજળી અત્યંત જરૂરી છે, જે ઘરો અને ધંધાઓને ચલાવે છે.  (Aadhunik jeevan maate vijali atyant jaruri chhe, je gharo ane dhandhao ne chalaave chhe.)\n"
 }
+```
 
+---
+
+## 📌 Environment Variables
+
+Create a `.env` file in the root directory:
+
+```
+GEMINI_API_KEY=your_api_key_here
+```
+
+---
+
+## 🧠 Author
+
+Made with ❤️ by [Dhruv Patel](https://github.com/Dhruv942)
