@@ -41,7 +41,7 @@ maheshwari-electrical-agency-backend-task/
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repo-url>
+git clone https://github.com/Dhruv942/Maheshwari-electrical-agency-Backend-task.git
 cd maheshwari-electrical-agency-backend-task
 ```
 
